@@ -8,7 +8,12 @@
     "nameTemplate": "days/day{{num}}.js",
     "templateFile": "node_modules/advent-of-code/src/templates/day.js"
   },
-  "dependencies": {
-    "advent-of-code": "^3.0.1"
+  "eslintConfig": {
+    "extends": ["standard"]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "advent-of-code": "^3.0.1",
+    "standard": "^10.0.3"
   }
 }
