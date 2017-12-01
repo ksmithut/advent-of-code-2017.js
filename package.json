@@ -1,0 +1,14 @@
+{
+  "name": "advent-of-code-2017.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "adventConfig": {
+    "year": "2017",
+    "nameTemplate": "days/day{{num}}.js",
+    "templateFile": "node_modules/advent-of-code/src/templates/day.js"
+  },
+  "dependencies": {
+    "advent-of-code": "^3.0.1"
+  }
+}
