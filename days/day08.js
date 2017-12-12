@@ -53,9 +53,9 @@ const runInstructions = (instructions, each = () => {}) => {
   }, {})
 }
 
-const max = (a, b) => Math.max(a, b)
-
-const maxValue = registers => Object.values(registers).reduce(max)
+const maxValue = registers => {
+  Object.values(registers).reduce((a, b) => Math.max(a, b))
+}
 
 const part1 = input => {
   const instructions = createInstructions(input)
@@ -72,7 +72,7 @@ const part2 = input => {
   runInstructions(instructions, registers => {
     maxValues.push(maxValue(registers))
   })
-  return maxValues.reduce(max)
+  return maxValue(maxValues)
 }
 
 module.exports = { part1, part2 }
