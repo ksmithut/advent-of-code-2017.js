@@ -50,21 +50,21 @@ const part1 = input => {
 // ======
 
 const part2 = input => {
+  const times = 64
   const rope = generateRange(256)
   const lengths = input
     .split('')
     .map(char => char.charCodeAt(0))
     .concat([17, 31, 73, 47, 23])
 
-  const hash = runHash(lengths, rope, { times: 64 })
+  const hash = runHash(lengths, rope, { times })
     .reduce((groups, elem, i) => {
-      if (i % 16 === 0) groups.unshift([])
-      groups[0].push(elem)
+      if (i % 16 === 0) groups.push([])
+      groups[groups.length - 1].push(elem)
       return groups
     }, [])
-    .reverse()
     .map(segment => segment.reduce((prev, curr) => prev ^ curr))
-    .map(charCode => charCode.toString(16).padStart('0', 2))
+    .map(charCode => charCode.toString(16).padStart(2, '0'))
     .join('')
   return hash
 }
