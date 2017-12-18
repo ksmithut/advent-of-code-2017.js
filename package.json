@@ -9,9 +9,10 @@
     "templateFile": "node_modules/advent-of-code/src/templates/day.js"
   },
   "eslintConfig": {
-    "extends": ["standard"]
+    "extends": [
+      "standard"
+    ]
   },
-  "dependencies": {},
   "devDependencies": {
     "advent-of-code": "^3.0.1",
     "standard": "^10.0.3"
