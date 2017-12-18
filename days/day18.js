@@ -36,17 +36,14 @@ class Program {
     this.outbox = outbox
     this.sent = 0
   }
-
   run () {
     this.waiting = false
     this.pos += this.instructions[this.pos]()
   }
-
   get (x) {
     if (/\d+/.test(x)) return parseInt(x, 10)
     return this.registers[x] || 0
   }
-
   set (x, y) {
     this.registers[x] = this.get(y)
     return 1
@@ -84,7 +81,6 @@ class Program {
 const part1 = input => {
   const channel = new Channel({ pop: true })
   const program = new Program(0, input, channel, channel)
-
   do {
     program.run()
   } while (!channel.mostRecentTaken)
