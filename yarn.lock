@@ -16,12 +16,12 @@ acorn@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.2.1.tgz#317ac7821826c22c702d66189ab8359675f135d7"
 
-advent-of-code@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/advent-of-code/-/advent-of-code-3.0.1.tgz#4f7707f316f4d9f953d8f24d8b9e332ff99e9034"
+advent-of-code@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/advent-of-code/-/advent-of-code-3.1.0.tgz#3edc89823892095117bc6c65f4aa9c3e49d29215"
   dependencies:
     bluebird "^3.5.1"
-    commander "^2.11.0"
+    commander "^2.12.2"
     configstore "^3.1.1"
     debug "^3.1.0"
     get-stdin "^5.0.1"
@@ -209,7 +209,7 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@^2.11.0:
+commander@^2.12.2:
   version "2.12.2"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
 

@@ -52,4 +52,5 @@ const part2 = (input, maxComparisons = 5e6) => {
   return countMatches(maxComparisons, generatorA, generatorB)
 }
 
-module.exports = { part1, part2 }
+exports.part1 = part1
+exports.part2 = part2

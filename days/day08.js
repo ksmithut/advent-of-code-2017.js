@@ -75,4 +75,5 @@ const part2 = input => {
   return maxValue(maxValues)
 }
 
-module.exports = { part1, part2 }
+exports.part1 = part1
+exports.part2 = part2

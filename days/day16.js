@@ -71,4 +71,5 @@ const part2 = input => {
   return danceRepeat(input, 1e9)
 }
 
-module.exports = { part1, part2 }
+exports.part1 = part1
+exports.part2 = part2

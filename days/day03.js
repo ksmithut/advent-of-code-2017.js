@@ -95,4 +95,5 @@ const part2 = input => {
   return currentNode.value
 }
 
-module.exports = { part1, part2 }
+exports.part1 = part1
+exports.part2 = part2

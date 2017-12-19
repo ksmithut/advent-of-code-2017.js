@@ -67,4 +67,5 @@ const part2 = input => {
   return runStream(input, { onGarbage: garbageCount => garbageCount + 1 }, 0)
 }
 
-module.exports = { part1, part2 }
+exports.part1 = part1
+exports.part2 = part2

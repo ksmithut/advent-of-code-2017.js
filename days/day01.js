@@ -21,4 +21,5 @@ const getOppositeIndex = (i, arr) => (i + arr.length / 2) % arr.length
 
 const part2 = input => sumMatchingPairs(input, getOppositeIndex)
 
-module.exports = { part1, part2 }
+exports.part1 = part1
+exports.part2 = part2
