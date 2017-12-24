@@ -21,9 +21,7 @@ function * permutationGenerator (parts, start = '0', prefix = []) {
     const end =
       startPart.sides.find(side => side !== start) || startPart.sides[0]
     yield subPrefix
-    for (let subPermutation of permutationGenerator(subParts, end, subPrefix)) {
-      yield subPermutation
-    }
+    yield * permutationGenerator(subParts, end, subPrefix)
   }
 }
 
