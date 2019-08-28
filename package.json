@@ -14,7 +14,7 @@
     ]
   },
   "devDependencies": {
-    "advent-of-code": "^4.0.2",
-    "standard": "^13.0.2"
+    "advent-of-code": "^4.0.3",
+    "standard": "^14.0.2"
   }
 }
